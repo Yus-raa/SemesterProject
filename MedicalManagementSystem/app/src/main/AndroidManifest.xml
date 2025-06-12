@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MedicalManagementSystem"
+        tools:targetApi="31">
+        <activity
+            android:name=".PatientHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GenerateBillActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MedicalManagementSystem" />
+        <activity
+            android:name=".HistoryUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TodaysAppointmentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PendingAppointmentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorRegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PatientBillsHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PatientTreatmentHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PatientAppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PatientProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PatientHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PatientRegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>
